@@ -1,0 +1,21 @@
+.column {
+  border-radius: 10px;
+  padding: 15px;
+  width: 300px;
+  min-height: 500px; 
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.column[data-col="todo"] {
+  background: #d0e7ff;
+}
+
+.column[data-col="inProgress"] {
+  background: #ffe5b4;
+}
+
+.column[data-col="done"] {
+  background: #d0ffd6;
+}

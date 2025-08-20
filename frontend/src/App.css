@@ -1,0 +1,146 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f5f7;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.task-form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.task-form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.task-form button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #0079bf;
+  color: white;
+  cursor: pointer;
+}
+
+.task-form button:hover {
+  background: #026aa7;
+}
+
+.board {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.column {
+  background: #ebecf0;
+  border-radius: 8px;
+  padding: 10px;
+  width: 300px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.column h2 {
+  margin-bottom: 10px;
+  color: #172b4d;
+}
+
+.task {
+  background: white;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.task p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  color: #888;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: red;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .board {
+    flex-direction: column;
+    align-items: center;
+  }
+}

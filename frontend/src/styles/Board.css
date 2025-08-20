@@ -1,0 +1,7 @@
+.board {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
